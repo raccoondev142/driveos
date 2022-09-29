@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('media/carwallpaper.jpg');
+    background-color: rgb(1, 1, 1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.applet {
+    width: 75px;
+    height: 75px;
+    border-radius: 4px;
+    border-color: rgb(202, 185, 26);
+    border-style: solid;
+    background-color: rgb(210, 228, 163);
+    background-size: contain;
+}
+
+.applet:hover {
+    border-color: rgb(212, 207, 143);
+}
+
+.applet:active {
+    border-color: rgb(139, 136, 92);
+    background-color: rgb(153, 168, 115);
+}

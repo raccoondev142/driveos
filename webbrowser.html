@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: rgb(39, 39, 39);
+            color: white;
+        }
+
+        .close {
+            background-color: red;
+            color: white;
+            border-style: none;
+            width: 38px;
+            height: 38px;
+        }
+
+        .close:hover {
+            background-color: rgb(253, 71, 71);
+        }
+    </style>
+    <button class="close" onclick="location.href = 'home.html';">X</button>
+    <br>
+    <center>
+        <img src="media/web.png" style="width:100px; height:100px;">
+        <h1>Web Browser</h1>
+        <select id="prefix">
+            <option value="https://">https://</option>
+            <option value="http://">http://</option>
+            <option value="view-source:">view-source:</option>
+            <option value="file:///">file:///</option>
+            <option value="none">None</option>
+        </select>
+        <input type="text" id="address-bar" placeholder="Type in URL..."><button onclick="go(document.getElementById('address-bar').value)">Go!</button>
+        <br>
+        <br>
+        <iframe src="https://www.google.com" id="web" width="875" height="685" style="background-color:white;"></iframe>
+    </center>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .close {
+            background-color: red;
+            color: white;
+            border-style: none;
+            width: 38px;
+            height: 38px;
+        }
+
+        .close:hover {
+            background-color: rgb(253, 71, 71);
+        }
+    </style>
+    <button class="close" onclick="location.href = 'home.html';">X</button>
+    <br>
+    <center>
+    <input type="text" placeholder="Search Location, Address or Coordinates." id="mapsnav">
+    <button onclick="mapsnav()">Go</button>
+    <br>
+    <br>
+    <iframe id="maps"
+  width="873"
+  height="685"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD3s9EsTRca5-acWjANwOB0F23pnkTc9Gc&q=Redding,+CA">
+</iframe>
+</center>
+</body>
+</html>
